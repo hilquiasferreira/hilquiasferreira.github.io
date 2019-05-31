@@ -1,4 +1,4 @@
-
+{%- for post in site.posts -%}
 <link rel="stylesheet" href="../_sass/plain.scss"></link>
 
 <div class="card">
@@ -8,20 +8,6 @@
     <p>Test post card</p> 
   </div>
 </div>
+{%- endfor -%}
 
-<div class="card">
-    <img src="https://raw.githubusercontent.com/hilquiasferreira/hilquiasferreira.github.io/master/images/PythonVSCode.png" alt="Python" style="width:100%">
-    <div class="container">
-      <h4><b>Python</b></h4> 
-      <p>Python on VS Code</p> 
-    </div>
-  </div>
 
-  <div class="card" style="width:400px">
-      <img class="card-img-top" src="img_avatar1.png" alt="Card image">
-      <div class="card-body">
-        <h4 class="card-title">John Doe</h4>
-        <p class="card-text">Some example text.</p>
-        <a href="#" class="btn btn-primary">See Profile</a>
-      </div>
-    </div>
