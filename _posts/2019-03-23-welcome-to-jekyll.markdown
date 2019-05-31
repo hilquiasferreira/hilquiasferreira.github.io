@@ -1,5 +1,5 @@
-
-<style>
+<link rel="stylesheet" href="../_sass/devlog.scss">
+<!-- <style>
 .card {
     margin: 20px !important;
     padding: 20px !important;
@@ -9,14 +9,14 @@
     height: auto;
     margin: 20px !important;
 }
-</style>
+</style> -->
 <div class="col-lg-12">
 	<div class="row">
         <div class="col-lg-8 col-md-4">
             <ul>
                 <div class="row">                 
                     <div class="card blog-post">
-                        <img class="card-img-top" src="/assets/img/posts/useful-tools.jpg" alt="Useful Tools For Developers">
+                        <img class="card-img-top" src="../assets/img/posts/useful-tools.jpg" alt="Useful Tools For Developers">
                         <div class="card-body center">
                             <img src="/assets/img/profile.png" class="author-profile-img">
                             <h4 class="card-title">Useful Tools For Developers</h4>
