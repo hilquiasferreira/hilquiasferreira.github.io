@@ -18,8 +18,7 @@ body {
 	line-height: 1.2em;
 	margin: 0;
 	-webkit-font-smoothing: antialiased;
-	-moz-osx-font-smoothing: grayscale;
-	background-color: #ced4da;
+	-moz-osx-font-smoothing: grayscale;	
 }
 
 img, embed, object, video {
@@ -157,7 +156,7 @@ main {
 	}
 }
 .post-container {
-
+	background-color: #ced4da;
 	padding-left: 40px;
 }
 .post {
