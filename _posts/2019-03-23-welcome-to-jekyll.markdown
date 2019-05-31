@@ -1,5 +1,15 @@
-<link rel="stylesheet" href="../_sass/devlog.scss">
 
+<style>
+.card {
+    margin: 20px !important;
+    padding: 20px !important;
+}
+.blog-post {
+    width: 350px;
+    height: auto;
+    margin: 20px !important;
+}
+</style>
 <div class="col-lg-12">
 	<div class="row">
         <div class="col-lg-8 col-md-4">
