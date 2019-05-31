@@ -2,7 +2,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <title>TEST</title>
+  <title>{{ post.title | escape }}</title>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
@@ -17,10 +17,11 @@
   <div class="card" style="width:300px">
       <img class="card-img-top" src="/{{ post.thumbnail }}"  alt="Card image" style="width:100%">  
     <div class="card-body">
-      <h4 class="card-title">John Doe</h4>
+      <h4 class="card-title">{{ post.title | escape }}</h4>
       <p class="card-text">Some example text some example text.</p>            
-    </div> 
-    <a href="{{ post.url | relative_url }}" class="btn btn-primary stretched-link">Read</a>   
+    </div>
+    <div class="post-date"><i class="icon-calendar"></i>{{ post.date | date: date_format }}</div> 
+    <a href="{{ post.url | relative_url }}" class="stretched-link"></a>   
   </div>
 </div>
 
