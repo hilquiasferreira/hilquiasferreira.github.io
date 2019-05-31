@@ -2,7 +2,9 @@
 title: Test img size
 layout: post
 summary: Learn git commands
-categories: web-development
+categories: 
+	- git
+	- web-development
 thumbnail: ../assets/img/posts/1-img-blog.png
 author: Hilquias Ferreira
 ---
