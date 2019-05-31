@@ -5,7 +5,7 @@ summary: Learn git commands
 categories: 
     - git
     - web-development
-thumbnail: /assets/img/posts/python-vs-code.png
+thumbnail: ../assets/img/posts/python-vs-code.png
 author: Hilquias Ferreira
 ---
 
