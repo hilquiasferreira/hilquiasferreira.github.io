@@ -1,8 +1,4 @@
-<!DOCTYPE html>
-<html>
-<head>
-  <link rel="stylesheet" href="../_sass/devlog.scss">
-</head>
+<link rel="stylesheet" href="../_sass/devlog.scss">
 
 <div class="col-lg-12">
 	<div class="row">
