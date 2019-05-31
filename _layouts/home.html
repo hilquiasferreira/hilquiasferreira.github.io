@@ -9,13 +9,9 @@ layout: default
 {{ content }}
 
 {%- if site.posts.size > 0 -%}
-<ul class="posts">
-	<li>
-		<h1 id="posts-label">posts-2</h1>
-	</li>
-	
+<div class="posts">		
 	{%- include cards.html -%}	
-</ul>
+</div>
 
 <!-- <p class="feed-subscribe"><svg class="svg-icon orange">
 		<use xlink:href="{{ '/assets/minima-social-icons.svg#rss' | relative_url }}"></use>
