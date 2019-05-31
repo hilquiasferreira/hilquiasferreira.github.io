@@ -18,7 +18,7 @@ body {
 	line-height: 1.2em;
 	margin: 0;
 	-webkit-font-smoothing: antialiased;
-	-moz-osx-font-smoothing: grayscale;	
+	-moz-osx-font-smoothing: grayscale;
 }
 
 img, embed, object, video {
@@ -156,8 +156,8 @@ main {
 	}
 }
 .post-container {
-	background-color: #ced4da;
 	padding-left: 40px;
+	background-color: rgb(243, 238, 238);
 }
 .post {
 	font-family: 'Merriweather', sans-serif;
@@ -188,12 +188,13 @@ main {
 	box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
 	transition: 0.3s;
 	width: 40%;
-  }
+	background-color:white; 
+}
   
   .card:hover {
 	box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
   }
   
   .container {
-	padding: 2px 16px;
+	padding: 2px 16px;	
   }
