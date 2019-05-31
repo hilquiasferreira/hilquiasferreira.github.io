@@ -2,12 +2,9 @@
 layout: post
 title:  "Test II"
 date:   2019-03-23 21:03:36 +0530
-categories: Microsoft Dynamics 365 Finance & Operations
+categories: D365FO
 ---
-<!DOCTYPE html>
-<html>
-<head>
-<meta name="viewport" content="width=device-width, initial-scale=1">
+
 <style>
 .card {
   box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
@@ -23,8 +20,6 @@ categories: Microsoft Dynamics 365 Finance & Operations
   padding: 2px 16px;
 }
 </style>
-</head>
-<body>
 
 <h2>Card</h2>
 
