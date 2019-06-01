@@ -10,8 +10,7 @@
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
 </head>
 <body>
-    <div class="container">
-      {%- for post in site.posts -%}
+    <div class="container">      
       <br>
       <div class="card" style="width:300px">
           <img class="card-img-top" src="/{{ post.thumbnail }}"  alt="Card image" style="width:100%">  
@@ -22,8 +21,7 @@
         <div class="post-date"><i class="icon-calendar"></i>{{ post.date | date: date_format }}</div> 
         <a href="{{ post.url | relative_url }}" class="stretched-link"></a>   
       </div>
-      {%- endfor -%}
-    </div>
+     </div>
 </body>
 </html>
 
