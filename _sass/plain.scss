@@ -40,6 +40,7 @@ main {
 	margin: 0 90px;
 	display: flex;
 	height: 100%;
+	width:100%;
 
 	@media screen and (min-width: $bigScreenW) {
 		margin: 0 auto;
@@ -61,7 +62,7 @@ main {
 	}
 
 	.content {
-		width: 30%;
+		width: 70%;
 		@media screen and (min-width: $mobileW + 1){
 			max-width: calc(100% - $leftWidth);
 			margin-left: $leftWidth;
@@ -71,7 +72,7 @@ main {
 		display: flex;
 		height: 100vh;
 		padding-bottom: 15vh;
-		width: 70%;
+		width: 30%;
 		@media screen and (max-width: $mobileW) {
 			height: auto;	
 			padding: 10vh 0;
