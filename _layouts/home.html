@@ -3,12 +3,6 @@ layout: default
 ---
 {%- if page.title -%}
 <h1 class="page-heading">{{ page.title }}</h1>
-{%- endif -%}
-
-{{ content }}
-
-{%- if site.posts.size > 0 -%}			
-{%- include cards.html -%}
 {%- endif -%}	
 <!-- <p class="feed-subscribe"><svg class="svg-icon orange">
 		<use xlink:href="{{ '/assets/minima-social-icons.svg#rss' | relative_url }}"></use>
