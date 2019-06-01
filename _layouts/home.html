@@ -18,8 +18,9 @@ layout: default
 {{ content }}
 
 {%- if site.posts.size > 0 -%}
-<div class="posts">
-	{%- for post in site.posts -%}
+<!--  <div class="posts"> -->
+	<section>
+		{%- for post in site.posts -%}
 
 		<div class="container">      
 			
@@ -53,9 +54,9 @@ layout: default
 			{{ post.excerpt }}
 			{%- endif -%}
 		</div>
-	</li> -->
-	{%- endfor -%}
-</ul>
+		</li> -->
+		{%- endfor -%}
+	</section>
 
  <!-- <p class="feed-subscribe"><svg class="svg-icon orange">
 		<use xlink:href="{{ '/assets/minima-social-icons.svg#rss' | relative_url }}"></use>
