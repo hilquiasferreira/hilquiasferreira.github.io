@@ -13,7 +13,7 @@ sass:
   sass_dir: _sass
 plainwhite:
   name: Hilquias Ferreira
-  tagline: Sennior Analyst Programmer
+  tagline: Analyst Programmer
   date_format: "%b %-d, %Y"
 
   # generate social links in footer
