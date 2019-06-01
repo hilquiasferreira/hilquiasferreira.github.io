@@ -18,12 +18,12 @@ layout: default
 {{ content }}
 
 {%- if site.posts.size > 0 -%}
-<!--  <div class="posts"> -->
-	<section>
-		{%- for post in site.posts -%}
-
-		<div class="container">      
+<div class="row"> 
 			
+	{%- for post in site.posts -%}
+
+	<div class="col" >
+		<div class="container">      			
 			<div class="card" style="width:300px">
 				<img class="card-img-top" src="/{{ post.thumbnail }}"  alt="Card image" style="width:100%">  
 				<div class="card-body">
@@ -34,7 +34,7 @@ layout: default
 				<a href="{{ post.url | relative_url }}" class="stretched-link"></a>   
 			</div>
 		</div>
-	
+	</div>
 	
 <!--	<li>
 		{%- assign date_format = site.minima.date_format | default: "%b %-d, %Y" -%}
@@ -56,7 +56,7 @@ layout: default
 		</div>
 		</li> -->
 		{%- endfor -%}
-	</section>
+</div>
 
  <!-- <p class="feed-subscribe"><svg class="svg-icon orange">
 		<use xlink:href="{{ '/assets/minima-social-icons.svg#rss' | relative_url }}"></use>
