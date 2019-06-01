@@ -1,6 +1,15 @@
 ---
 layout: default
 ---
+<head>
+	<title>{{ post.title | escape }}</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+</head>
 
 {%- if page.title -%}
 <h1 class="page-heading">{{ page.title }}</h1>
@@ -12,8 +21,20 @@ layout: default
 <ul class="posts">
 	{%- for post in site.posts -%}
 	<li>
-		<h1 id="posts-label">posts</h1>
+		<div class="container">      
+			<br>
+			<div class="card" style="width:300px">
+				<img class="card-img-top" src="/{{ post.thumbnail }}"  alt="Card image" style="width:100%">  
+				<div class="card-body">
+				<h4 class="card-title">{{ post.title | escape }}</h4>
+				<p class="card-text">Some example text some example text.</p>            
+				</div>
+				<div class="post-date"><i class="icon-calendar"></i>{{ post.date | date: date_format }}</div> 
+				<a href="{{ post.url | relative_url }}" class="stretched-link"></a>   
+			</div>
+		</div>
 	</li>
+	
 	<li>
 		{%- assign date_format = site.minima.date_format | default: "%b %-d, %Y" -%}
 		<a class="post-link" href="{{ post.url | relative_url }}">
