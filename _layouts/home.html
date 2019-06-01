@@ -18,11 +18,11 @@ layout: default
 {{ content }}
 
 {%- if site.posts.size > 0 -%}
-<ul class="posts">
+<div class="posts">
 	{%- for post in site.posts -%}
-	<li>
+
 		<div class="container">      
-			<br>
+			
 			<div class="card" style="width:300px">
 				<img class="card-img-top" src="/{{ post.thumbnail }}"  alt="Card image" style="width:100%">  
 				<div class="card-body">
@@ -33,7 +33,7 @@ layout: default
 				<a href="{{ post.url | relative_url }}" class="stretched-link"></a>   
 			</div>
 		</div>
-	</li>
+	
 	
 <!--	<li>
 		{%- assign date_format = site.minima.date_format | default: "%b %-d, %Y" -%}
