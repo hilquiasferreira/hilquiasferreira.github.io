@@ -75,6 +75,9 @@
 			<div class="col-sm-8">
 				<div class="row">
 					{%- for post in site.posts -%}
+					<div class="col-sm-4">
+						{%- include cards.html -%}
+					</div>
 <!--					
 					<div class="container">
 						<div class="jumbotron">
@@ -87,7 +90,7 @@
 							</div>   
 						</div>						
 					</div>
--->	
+
 						<div class="col-sm-4">      			
 							<div class="card" style="width:200px">
 								<img class="card-img-top" src="/{{ post.thumbnail }}"  alt="Card image" style="width:100%">  
@@ -102,7 +105,8 @@
 							</div>
 						
 							<br>
-						</div>						
+						</div>
+-->													
 					{%- endfor -%}
 				</div>
 			</div>
