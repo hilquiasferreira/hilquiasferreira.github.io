@@ -40,25 +40,27 @@
 
 	<div class="container" style="margin-top:30px">
 		<div class="row">
-			<div class="col-sm-4">					
-					<img src="{{ "/assets/portfolio.png" | relative_url }}" alt="{{ site.plainwhite.name }}" height="300px">
-					<h4>Hilquias Ferreira</h4>
-					<p>Senior Analyst Programmer</p>
-					<br>
-					<ul class="social">
-						<a href="https://github.com/{{ site.plainwhite.social_links.github }}">
-							<li><i class="icon-github-circled"></i></li>
-						</a>
-						<a href="https://linkedin.com/{{ site.plainwhite.social_links.linkedIn }}">
-							<li><i class="icon-linkedin-squared"></i></li>
-						</a>
-						<a href="https://twitter.com/{{ site.plainwhite.social_links.twitter }}">
-							<li><i class="icon-twitter-squared"></i></li>
-						</a>
-					</ul>
-					<br>
-					<p>&copy; 2019</p>				
-				
+			<div class="col-sm-4">
+				<center>
+				<img src="{{ "/assets/portfolio.png" | relative_url }}" alt="{{ site.plainwhite.name }}" height="300px">
+				<h4>Hilquias Ferreira</h4>
+				<p>Senior Analyst Programmer</p>
+				<br>
+				<ul class="social">
+					<a href="https://github.com/{{ site.plainwhite.social_links.github }}">
+						<li><i class="icon-github-circled"></i></li>
+					</a>
+					<a href="https://linkedin.com/{{ site.plainwhite.social_links.linkedIn }}">
+						<li><i class="icon-linkedin-squared"></i></li>
+					</a>
+					<a href="https://twitter.com/{{ site.plainwhite.social_links.twitter }}">
+						<li><i class="icon-twitter-squared"></i></li>
+					</a>
+				</ul>
+				</center>
+				<br>
+				<p>&copy; 2019</p>
+
 				<ul class="nav nav-pills flex-column">
 					<li class="nav-item">
 						<a class="nav-link active" href="#">Active</a>
@@ -77,16 +79,16 @@
 			</div>
 			<div class="col-sm-8">
 				{%- if site.posts.size > 0 -%}
-					<div class="row">
-						{%- for post in site.posts -%}
-						<div class="col-sm-4">
-							{%- include card.html -%}
-						</div>									
-						{%- endfor -%}
+				<div class="row">
+					{%- for post in site.posts -%}
+					<div class="col-sm-4">
+						{%- include card.html -%}
 					</div>
+					{%- endfor -%}
+				</div>
 				{%- endif -%}
 			</div>
-			
+
 		</div>
 	</div>
 
