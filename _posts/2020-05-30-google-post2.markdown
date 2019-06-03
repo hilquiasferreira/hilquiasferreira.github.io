@@ -1,5 +1,5 @@
 ---
-title: Using Git Like Pro
+title: Using Git pra valer
 layout: post
 summary: Learn git commands
 categories: 

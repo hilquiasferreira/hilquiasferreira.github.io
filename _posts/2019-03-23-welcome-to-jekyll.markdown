@@ -1,5 +1,5 @@
 ---
-title: Using Git Like Pro
+title: Testando title II
 layout: post
 summary: Learn git commands
 categories: 
