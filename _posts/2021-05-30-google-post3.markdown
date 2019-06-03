@@ -1,11 +1,11 @@
 ---
-title: Using Git Like Pro
+title: Speaking Frech
 layout: post
 summary: Learn git commands
 categories: 
     - git
     - web-development
-thumbnail: ../assets/img/posts/python-vs-code.png
+thumbnail: ../assets/img/posts/1-img-blog.png
 author: Hilquias Ferreira
 ---
 

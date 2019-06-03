@@ -7,34 +7,26 @@ layout: default
   <div class="row">
     <div class="col">
       <h2>{{ page.title | escape }}</h2>
-      <h5>Title description, Dec 7, 2017</h5>
+
+      <ul class="post-categories">
+          {%- for tag in page.categories -%}
+          <li>{{ tag }}</li>
+          {%- endfor -%}
+        </ul>
+
+      <h5>{{ page.date | date: date_format }}</h5>
       <div class="fakeimg">Fake Image</div>
-      <p>Some text..</p>
-      <p>Sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod
-        tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.
+      <p>How to speak french every day in Malta</p>
+      <p>
+
+       {{ content }}
+
       </p>
       <br>
     </div>
   </div>
 </div>
 
-
-<!--
-<div class="post-container">
-<a class="post-link" href="{{ page.url | relative_url }}">
-	<h2 class="post-title">{{ page.title | escape }}</h2>
-</a>
-<div class="post-meta">
-	<ul class="post-categories">
-		{%- for tag in page.categories -%}
-		<li>{{ tag }}</li>
-		{%- endfor -%}
-	</ul>
-	<div class="post-date"><i class="icon-calendar"></i>{{ page.date | date: date_format }}</div>
-</div>
-<div class="post">
-	{{ content }}
-</div>
 {%- if site.plainwhite.disqus_shortname -%}
 <div id="disqus_thread" style="margin-top:25px"></div>
   <script>
@@ -52,4 +44,3 @@ layout: default
   <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript" rel="nofollow">comments powered by Disqus.</a></noscript>
 </div>
 {%- endif -%}
--->
