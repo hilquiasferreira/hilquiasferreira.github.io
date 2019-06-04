@@ -3,8 +3,7 @@ title: Testando title II
 layout: post
 summary: Learn git commands
 categories: 
-    - git
-    - web-development
+    - Test
 thumbnail: ../assets/img/posts/automation-3154529-640.png
 author: Hilquias Ferreira
 imageauthor: 
