@@ -5,7 +5,7 @@ summary: Learn git commands
 categories: 
     - git
     - web-development
-thumbnail: ../assets/img/posts/online-3539412_640.jpg
+thumbnail: ../assets/img/posts/online-3539412_640.png
 author: Hilquias Ferreira
 imageauthor: 
 ---
