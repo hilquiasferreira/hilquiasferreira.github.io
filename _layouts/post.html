@@ -11,11 +11,11 @@ layout: default
         {{ page.imageauthor }}
     </p>     
     <div class="card-body">      
-      <ul class="post-categories">
+      <div class="container">
         {%- for tag in page.categories -%}
-        <li>{{ tag }}</li>
+          <span class="label label-default">{{ tag }}</span>       
         {%- endfor -%}
-      </ul>
+      </div>
       <p class="card-text">
 
         {{content}}
