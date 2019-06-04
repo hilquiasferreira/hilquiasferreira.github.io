@@ -6,24 +6,24 @@ layout: default
   <div class="row">
     <div class="col-sm-8">
       <h3>{{ page.title | escape }}</h4>
-      <div class="post-date">
-        <i class="icon-calendar"></i>{{ page.date | date: date_format }}
-      </div>
-      <img src="/{{ page.thumbnail }}" alt="{{ page.title | scape}}">
-      <p>
-        {{ page.imageauthor }}
-      </p>
-      <div class="container">
-        {%- for tag in page.categories -%}
-        <span class="badge badge-pill badge-secondary">{{ tag }}</span>
-        {%- endfor -%}
-
+        <div class="post-date">
+          <i class="icon-calendar"></i>{{ page.date | date: date_format }}
+        </div>
+        <img class="rounded" src="/{{ page.thumbnail }}" alt="{{ page.title | scape}}">
         <p>
-
-          {{content}}
-
+          {{ page.imageauthor }}
         </p>
-      </div>
+        <div class="container">
+          {%- for tag in page.categories -%}
+          <span class="badge badge-pill badge-secondary">{{ tag }}</span>
+          {%- endfor -%}
+
+          <p>
+
+            {{content}}
+
+          </p>
+        </div>
     </div>
   </div>
 </div>
