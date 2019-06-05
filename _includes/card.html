@@ -6,16 +6,16 @@
 </head>
 
 <body>
-  <div class="card">
-    <img class="card-img-top" src="/{{ post.thumbnail }}" alt="Card image" style="width:100%">
-    <div class="card-body">
-      <h4>{{ post.title | escape }}</h4>
-      <p class="card-text">{{ post.summary | escape }}</p>
-    </div>
-    <div class="post-date"><i class="icon-calendar"></i>{{ post.date | date: date_format }}</div>
-    <a href="{{ post.url | relative_url }}" class="stretched-link"></a>
-  </div>
-  <br>
+    <div class="card">
+        <img class="card-img-top" src="/{{ post.thumbnail }}" alt="Card image" style="width:100%">
+        <div class="card-body">
+            <h4>{{ post.title | escape }}</h4>
+            <p class="card-text">{{ post.summary | escape }}</p>
+        </div>
+        <div class="post-date"><i class="icon-calendar"></i>{{ post.date | date: date_format }}</div>
+            <a href="{{ post.url | relative_url }}" class="stretched-link"></a>
+      </div>
+    <br>
 </body>
 
 </html>
