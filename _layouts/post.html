@@ -12,14 +12,14 @@ layout: default
             <br>
             {{ page.author }}
 
-            <div class="row">
-                {%- for post in site.posts -%}
-                <div class="column">
-                  Teste
-                  <br>
-                </div>
-                {%- endfor -%}
-              </div>
+            
+            {%- for post in site.posts -%}
+            
+              {{ post.title }}
+              <br>
+            
+            {%- endfor -%}
+              
 
           </center>
         </div>
