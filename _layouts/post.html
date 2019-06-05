@@ -17,7 +17,7 @@ layout: default
             <ul class="nav flex-column">
             {%- for post in site.posts -%}
             <li class="nav-item">
-              <a href="{{ post.url | relative_url }}">{{ post.title }}</a>
+              <a class="nav-item" href="{{ post.url | relative_url }}">{{ post.title }}</a>
             </li>
             <br>
             
