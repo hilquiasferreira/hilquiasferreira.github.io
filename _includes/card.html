@@ -9,7 +9,7 @@
   <div class="card">
     <img class="card-img-top" src="/{{ post.thumbnail }}" alt="Card image" style="width:100%">
     <div class="card-body">
-      <h4 class="card-title">{{ post.title | escape }}</h4>
+      <h5 class="card-title">{{ post.title | escape }}</h5>
       <p class="card-text">{{ post.summary | escape }}</p>
     </div>
     <div class="post-date"><i class="icon-calendar"></i>{{ post.date | date: date_format }}</div>
