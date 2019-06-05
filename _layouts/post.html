@@ -14,14 +14,15 @@ layout: default
             {{ page.author }}
 
             <br>
+            <ul class="nav flex-column">
             {%- for post in site.posts -%}
-            
+            <li class="nav-item">
               <a href="{{ post.url | relative_url }}">{{ post.title }}</a>
-              
-              <br>
+            </li>
+            <br>
             
             {%- endfor -%}
-              
+            </ul>  
 
           </center>
         </div>
