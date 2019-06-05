@@ -10,12 +10,14 @@ layout: default
             <span class="badge badge-pill badge-secondary">{{ tag }}</span>
             {%- endfor -%}
             <br>
+            <p>Posted by:</p>
             {{ page.author }}
 
-            
+            <br>
             {%- for post in site.posts -%}
             
-              {{ post.title }}
+              <a href="{{ post.url | relative_url }}" class="stretched-link" >{{ post.title }}</a>
+              
               <br>
             
             {%- endfor -%}
