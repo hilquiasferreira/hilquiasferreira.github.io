@@ -1,6 +1,6 @@
 ---
 title: Francophonie
-layout: category
+layout: postshome
 summary: "Francophonie summary"
 image: ../assets/img/posts/automation-3154529-640.png 
 ---

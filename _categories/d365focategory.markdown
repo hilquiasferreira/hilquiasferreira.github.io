@@ -1,6 +1,6 @@
 ---
 title: D365F&O
-layout: category
+layout: postshome
 summary: "Test category summary"
 image: ../assets/img/posts/automation-3154529-640.png 
 ---
