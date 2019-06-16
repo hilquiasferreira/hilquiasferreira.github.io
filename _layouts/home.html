@@ -42,14 +42,16 @@ layout: default
 				<hr class="d-sm-none">
 			</center>
 		</div>
-		<div class="col-sm-8">			
+		<div class="col-sm-8">
+			{%- if site.categories.size > 0 -%}			
 			<div class="row">
 				{%- for category in site.categories -%}
 				<div class="col-sm-4">
-					{%- include card.html -%}
+					{%- include cardcategory.html -%}
 				</div>
 				{%- endfor -%}
 			</div>
+			{%- endif -%}
 		</div>
 
 	</div>
