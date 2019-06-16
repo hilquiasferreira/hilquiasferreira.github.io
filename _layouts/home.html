@@ -43,15 +43,15 @@ layout: default
 			</center>
 		</div>
 		<div class="col-sm-8">			
-			{%- if site.categories.size > 0 -%}			
+				
 			<div class="row">
 				{%- for category in site.categories -%}
-				{%- category.title -%}
+				
 				<div class="col-sm-4">
 					{%- include cardcategory.html -%}
 				</div>
 				{%- endfor -%}
 			</div>
-			{%- endif -%}					
+						
 	</div>
 </div>
