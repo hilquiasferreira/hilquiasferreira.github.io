@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  {%- include head.html -%}
+</head>
+
+<body>
+    <div class="card">
+        <img class="card-img-top" src="/{{ category.image }}" alt="Card image" style="width:100%">
+        <div class="card-body">
+            <h6>{{ category.title | escape }}</h6>
+            <p class="card-text">{{ category.summary | escape }}</p>
+        </div>        
+        <a href="{{ category.url | relative_url }}" class="stretched-link"></a>
+    <br>
+</body>
+
+</html>

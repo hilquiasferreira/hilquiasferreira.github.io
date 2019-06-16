@@ -42,14 +42,18 @@ layout: default
 				<hr class="d-sm-none">
 			</center>
 		</div>
-		<div class="col-sm-8">			
+		<div class="col-sm-8">
+			{%- if site.posts.size > 0 -%}
 			<div class="row">
-				{%- for category in site.categories -%}
-				<div class="col-sm-4">
-					{%- include category.html -%}
-				</div>
+                {%- for post in site.posts -%}
+                    {%- if post.category = "D365FO" -%}
+                        <div class="col-sm-4">
+                            {%- include card.html -%}
+                        </div>
+                    {%- endif -%}
 				{%- endfor -%}
 			</div>
+			{%- endif -%}
 		</div>
 
 	</div>
