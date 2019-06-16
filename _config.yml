@@ -56,3 +56,4 @@ plugins:
 
 collections:
   categories:
+    output: true
