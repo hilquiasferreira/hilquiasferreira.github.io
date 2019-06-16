@@ -46,6 +46,7 @@ layout: default
 			{%- if site.categories.size > 0 -%}			
 			<div class="row">
 				{%- for category in site.categories -%}
+				{%- category.title -%}
 				<div class="col-sm-4">
 					{%- include cardcategory.html -%}
 				</div>
