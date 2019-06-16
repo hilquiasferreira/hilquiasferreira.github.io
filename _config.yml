@@ -55,4 +55,4 @@ plugins:
 #  - jekyll-feed
 
 collections:
-  - categories
+  categories:
