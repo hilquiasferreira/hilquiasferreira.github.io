@@ -2,8 +2,13 @@
 <html lang="en">
 
 <body>
-    <div class="card">    
-        <img class="card-img-top" src="../assets/img/categ/francophonie.jpg" alt="Card image" style="width:100%">                
+    <div class="card">
+        {% if category[0] == "D365FO" %}    
+        <img class="card-img-top" src="../assets/img/categ/d365fo.png" alt="Card image" style="width:100%">
+        {% endif %}  
+        {% if category[0] == "francophonie" %}    
+        <img class="card-img-top" src="../assets/img/categ/francophonie.jpg" alt="Card image" style="width:100%">
+        {% endif %}              
         <div class="card-body">
             <h6>{{ category[0] }}</h6>
         </div>
