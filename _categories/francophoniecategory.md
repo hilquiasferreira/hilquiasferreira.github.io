@@ -1,5 +1,5 @@
 ---
-tag: D365F&O
+tag: Francophonie
 permalink: /category/d365fo
 image: ../assets/img/posts/automation-3154529-640.png 
 ---

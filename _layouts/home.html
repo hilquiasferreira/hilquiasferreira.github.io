@@ -11,19 +11,20 @@ layout: default
 				<h4>Hilquias Ferreira</h4>
 				<p>Senior Analyst Programmer</p>
 				<br>
-				
+
 				<div>
 					<!--Linkedin-->
-					<a class="fa fa-linkedin" href="https://linkedin.com/{{ site.plainwhite.social_links.linkedIn }}"></a>
-					<!--Twitter-->							
+					<a class="fa fa-linkedin"
+						href="https://linkedin.com/{{ site.plainwhite.social_links.linkedIn }}"></a>
+					<!--Twitter-->
 					<a class="fa fa-twitter" href="https://twitter.com/{{ site.plainwhite.social_links.twitter }}"></a>
 					<!--Github-->
-					<a class="fa fa-github" href="https://github.com/{{ site.plainwhite.social_links.github }}"></a>							
+					<a class="fa fa-github" href="https://github.com/{{ site.plainwhite.social_links.github }}"></a>
 				</div>
-				
+
 				<br>
 				<p>&copy; 2019</p>
-<!--
+				<!--
 				<ul class="nav nav-pills flex-column">
 					<li class="nav-item">
 						<a class="nav-link active" href="#">Active</a>
@@ -38,31 +39,42 @@ layout: default
 						<a class="nav-link disabled" href="#">Disabled</a>
 					</li>
 				</ul>
--->					
+-->
 				<hr class="d-sm-none">
 			</center>
 		</div>
-		<div class="col-sm-8">			
-				
+		<div class="col-sm-8">
+
 			<div class="row">
+
+					{% for category in site.categories %}
+					<h3>{{ category[0] }}</h3>
+					<ul>
+						{% for post in category[1] %}
+						<li><a href="{{ post.url }}">{{ post.title }}</a></li>
+						{% endfor %}
+					</ul>
+					{% endfor %}
+<!--
 				{%- for category in site.categories -%}
-				
 				<div class="col-sm-4">
 
-						<div class="card">
-							<img class="card-img-top" src="/{{ category.image }}" alt="Card image" style="width:100%">
-							<div class="card-body">
-								<h6>{{ category.title | escape }}</h6>
-								<p class="card-text">{{ category.summary | escape }}</p>
-							</div>
-							<div class="post-date"><i class="icon-calendar"></i>{{ category.date | date: date_format }}</div>
-								<a href="{{ category.url | relative_url }}" class="stretched-link"></a>
+					<div class="card">
+						<img class="card-img-top" src="/{{ category.image }}" alt="Card image" style="width:100%">
+						<div class="card-body">
+							<h6>{{ category.title | escape }}</h6>
+							<p class="card-text">{{ category.summary | escape }}</p>
 						</div>
+						<div class="post-date"><i class="icon-calendar"></i>{{ category.date | date: date_format }}
+						</div>
+						<a href="{{ category.url | relative_url }}" class="stretched-link"></a>
+					</div>
 
-					<!--{%- include cardcategory.html -%}-->
+					{%- include cardcategory.html -%}
 				</div>
 				{%- endfor -%}
+-->
 			</div>
-						
+
+		</div>
 	</div>
-</div>

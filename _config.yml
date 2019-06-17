@@ -16,12 +16,6 @@ plainwhite:
   tagline: Analyst Programmer
   date_format: "%b %-d, %Y"
 
-# Collections
-collections_dir: categories
-collections:
-  category:
-    output: "true"
-
   # generate social links in footer
   social_links:
     twitter: KiasSF
