@@ -48,7 +48,18 @@ layout: default
 				{%- for category in site.categories -%}
 				
 				<div class="col-sm-4">
-					{%- include cardcategory.html -%}
+
+						<div class="card">
+								<img class="card-img-top" src="/{{ category.image }}" alt="Card image" style="width:100%">
+								<div class="card-body">
+									<h6>{{ category.title | escape }}</h6>
+									<p class="card-text">{{ category.summary | escape }}</p>
+								</div>
+								<div class="post-date"><i class="icon-calendar"></i>{{ category.date | date: date_format }}</div>
+									<a href="{{ category.url | relative_url }}" class="stretched-link"></a>
+							  </div>
+
+					<!--{%- include cardcategory.html -%}-->
 				</div>
 				{%- endfor -%}
 			</div>
