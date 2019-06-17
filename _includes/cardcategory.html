@@ -5,7 +5,7 @@
     <div class="card">    
         <img class="card-img-top" src="../assets/img/categ/francophonie.jpg" alt="Card image" style="width:100%">                
         <div class="card-body">
-            <h6>{{ category[0].tag | escape }}</h6>
+            <h6>{{ category | escape }}</h6>
         </div>
         <div class="post-date"><i class="icon-calendar"></i>{{ category.date | date: date_format }}</div>
         <a href="{{ post.url | relative_url }}" class="stretched-link"></a>
