@@ -3,7 +3,7 @@ title: Testando title II
 layout: post
 summary: Learn git commands
 categories: 
-    - Test
+    - D365F&O
 thumbnail: ../assets/img/posts/automation-3154529-640.png
 author: Hilquias Ferreira
 imageauthor: 

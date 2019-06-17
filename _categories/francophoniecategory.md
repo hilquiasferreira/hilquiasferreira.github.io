@@ -1,7 +1,6 @@
 ---
-title: Francophonie
-layout: postshome
-summary: "Francophonie summary"
+tag: D365F&O
+permalink: /category/d365fo
 image: ../assets/img/posts/automation-3154529-640.png 
 ---
 
