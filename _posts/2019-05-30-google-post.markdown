@@ -3,8 +3,7 @@ title: Using Git Like Pro
 layout: post
 summary: Learn git commands
 categories: 
-    - git
-    - web-development
+    - Francophonie
 thumbnail: ../assets/img/posts/monitor-329512-640.jpg
 author: Hilquias Ferreira
 imageauthor: 
