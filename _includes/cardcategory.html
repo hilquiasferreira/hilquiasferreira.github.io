@@ -1,8 +1,8 @@
 
     <div class="card">
-        <img class="card-img-top" src="/{{ category.image }}" alt="Card image" style="width:100%">
+        <img class="card-img-top" src="/{{ image }}" alt="Card image" style="width:100%">
         <div class="card-body">
-            <h6>{{ category.title | escape }}</h6>
+            <h6>{{ title | escape }}</h6>
             <p class="card-text">{{ category.summary | escape }}</p>
         </div>
         <div class="post-date"><i class="icon-calendar"></i>{{ category.date | date: date_format }}</div>
