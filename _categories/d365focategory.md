@@ -1,7 +1,6 @@
 ---
-title: D365F&O
-layout: postshome
-summary: "Test category summary"
+tag: D365F&O
+permalink: /category/d365fo
 image: ../assets/img/posts/automation-3154529-640.png 
 ---
 
