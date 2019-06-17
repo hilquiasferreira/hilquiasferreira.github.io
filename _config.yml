@@ -16,9 +16,11 @@ plainwhite:
   tagline: Analyst Programmer
   date_format: "%b %-d, %Y"
 
+# Collections
+collections_dir: category
 collections:
   category:
-    output: true
+    output: "true"
 
 defaults:
   -
