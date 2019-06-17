@@ -24,7 +24,7 @@ layout: default
 
 				<br>
 				<p>&copy; 2019</p>
-				
+
 				<hr class="d-sm-none">
 			</center>
 		</div>
@@ -32,13 +32,13 @@ layout: default
 
 			<div class="row">
 
-				{% for category in site.categories %}
+				{%- for category in site.categories -%}
 				<div class="col-sm-4">
 					
 					{%- include cardcategory.html -%}
 					
 				</div>
-				{% endfor %}
+				{%- endfor -%}
 
 			</div>
 
