@@ -3,7 +3,7 @@ title: Testando title II
 layout: post
 summary: Learn git commands
 categories: 
-    - D365FO
+    - Dynamics 365 FO
 thumbnail: ../assets/img/posts/automation-3154529-640.png
 author: Hilquias Ferreira
 imageauthor: 
