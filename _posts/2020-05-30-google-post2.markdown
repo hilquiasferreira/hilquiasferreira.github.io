@@ -3,7 +3,7 @@ title: Using Git pra valer
 layout: post
 summary: Learn git commands
 categories: 
-    - web-development
+    - Web-development
 thumbnail: ../assets/img/posts/online-3539409_640.png
 author: Hilquias Ferreira
 imageauthor: 
