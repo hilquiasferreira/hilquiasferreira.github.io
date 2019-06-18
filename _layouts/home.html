@@ -8,4 +8,11 @@ layout: default
 	{%- include cardcategory.html -%}
 
 </div>
+
+<div class="col-sm-4">
+	{% for collec in site.my-collections %}
+		{% collec.real_name %}
+	{%- endfor -%}
+</div>
+
 {%- endfor -%}
