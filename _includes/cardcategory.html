@@ -1,18 +1,18 @@
 <div class="card">
-    {% if category[0] == "Dynamics 365 FO" %}
+    {% if category.name == "Dynamics 365 FO" %}
     <img class="card-img-top" src="../assets/img/categ/dynamics365.png" alt="Card image" style="width:100%">
     {% endif %}
 
-    {% if category[0] == "Francophonie" %}
+    {% if category.name == "French language" %}
     <img class="card-img-top" src="../assets/img/categ/french-language.png" alt="Card image" style="width:100%">
     {% endif %}
 
-    {% if category[0] == "Web-development" %}
+    {% if category.name == "Web development" %}
     <img class="card-img-top" src="../assets/img/categ/web-development.png" alt="Card image" style="width:100%">
     {% endif %}
 
     <div class="card-body">
-        <h6>{{ category[0] }}</h6>        
+        <h6>{{ category.name }}</h6>        
     </div>
     
     <a href="{{ page.url }}" class="stretched-link"></a>

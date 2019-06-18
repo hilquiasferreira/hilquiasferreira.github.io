@@ -18,7 +18,7 @@ plainwhite:
 
 #Collections
 collections:
-  types:
+  postcategories:
     output: true
 
   # generate social links in footer
