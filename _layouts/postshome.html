@@ -2,13 +2,12 @@
 layout: default
 ---
 {%- if site.posts.size > 0 -%}
-<div class="row">
 	{%- for post in site.posts -%}
-	{%- if post.category = "D365FO" -%}
-	<div class="col-sm-4">
-		{%- include card.html -%}
-	</div>
-	{%- endif -%}
+		{%- if post.category == "D365FO" -%}
+		<div class="col-sm-4">
+			{%- include card.html -%}
+		</div>
+		{%- endif -%}
 	{%- endfor -%}
-</div>
+
 {%- endif -%}
