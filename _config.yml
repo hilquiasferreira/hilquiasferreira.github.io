@@ -18,7 +18,8 @@ plainwhite:
 
 #Collections
 collections:
-  - types
+  types:
+    output: true
 
   # generate social links in footer
   social_links:
