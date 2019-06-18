@@ -66,6 +66,11 @@
 
 				</div>
 
+				{% for type in site.types %}
+				{{ type.real_name }}
+				{{ type.name }}
+				{% endfor %}
+
 			</div>
 		</div>
 
