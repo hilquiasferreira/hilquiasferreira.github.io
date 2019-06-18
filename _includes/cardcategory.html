@@ -1,21 +1,7 @@
-<div class="card">
- <!--
-    {% if category.name == "Dynamics 365 FO" %}
-    <img class="card-img-top" src="../assets/img/categ/dynamics365.png" alt="Card image" style="width:100%">
-    {% endif %}
-
-    {% if category.name == "French language" %}
-    <img class="card-img-top" src="../assets/img/categ/french-language.png" alt="Card image" style="width:100%">
-    {% endif %}
-
-    {% if category.name == "Web development" %}
-    <img class="card-img-top" src="../assets/img/categ/web-development.png" alt="Card image" style="width:100%">
-    {% endif %}
--->
+<div class="card"> 
     <img class="card-img-top" src="{{ category.image }}" alt="Card image" style="width:100%">
     <div class="card-body">
         <h6>{{ category.name }}</h6>        
-    </div>
-    
+    </div>    
     <a href="{{ page.url }}" class="stretched-link"></a>
 </div>
