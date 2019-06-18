@@ -1,46 +1,11 @@
 ---
 layout: default
 ---
-{%- assign date_format = site.minima.date_format | default: "%b %-d, %Y" -%}
-<div class="container" style="margin-top:30px">
-	<div class="row">
-		<div class="col-sm-4">
-			<center>
-				<img src="{{ "/assets/portfolio.png" | relative_url }}" alt="{{ site.plainwhite.name }}"
-					height="250px"></img>
-				<h4>Hilquias Ferreira</h4>
-				<p>Senior Analyst Programmer</p>
-				<br>
 
-				<div>
-					<!--Linkedin-->
-					<a class="fa fa-linkedin"
-						href="https://linkedin.com/{{ site.plainwhite.social_links.linkedIn }}"></a>
-					<!--Twitter-->
-					<a class="fa fa-twitter" href="https://twitter.com/{{ site.plainwhite.social_links.twitter }}"></a>
-					<!--Github-->
-					<a class="fa fa-github" href="https://github.com/{{ site.plainwhite.social_links.github }}"></a>
-				</div>
+{%- for category in site.categories -%}
+<div class="col-sm-4">
 
-				<br>
-				<p>&copy; 2019</p>
+	{%- include cardcategory.html -%}
 
-				<hr class="d-sm-none">
-			</center>
-		</div>
-		<div class="col-sm-8">
-
-			<div class="row">
-
-				{%- for category in site.categories -%}
-				<div class="col-sm-4">
-					
-					{%- include cardcategory.html -%}
-					
-				</div>
-				{%- endfor -%}
-
-			</div>
-
-		</div>
-	</div>
+</div>
+{%- endfor -%}
