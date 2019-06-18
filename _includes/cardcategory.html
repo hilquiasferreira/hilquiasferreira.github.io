@@ -1,27 +1,19 @@
-<!DOCTYPE html>
-<html lang="en">
+<div class="card">
+    {% if category[0] == "Dynamics 365 FO" %}
+    <img class="card-img-top" src="../assets/img/categ/d365fo.png" alt="Card image" style="width:100%">
+    {% endif %}
 
-<body>
-    <div class="card">
-        {% if category[0] == "Dynamics 365 FO" %}    
-        <img class="card-img-top" src="../assets/img/categ/d365fo.png" alt="Card image" style="width:100%">
-        {% endif %}
+    {% if category[0] == "Francophonie" %}
+    <img class="card-img-top" src="../assets/img/categ/francophonie.jpg" alt="Card image" style="width:100%">
+    {% endif %}
 
-        {% if category[0] == "Francophonie" %}    
-        <img class="card-img-top" src="../assets/img/categ/francophonie.jpg" alt="Card image" style="width:100%">
-        {% endif %} 
+    {% if category[0] == "Web-development" %}
+    <img class="card-img-top" src="../assets/img/categ/francophonie.jpg" alt="Card image" style="width:100%">
+    {% endif %}
 
-        {% if category[0] == "Web-development" %}    
-        <img class="card-img-top" src="../assets/img/categ/francophonie.jpg" alt="Card image" style="width:100%">
-        {% endif %} 
-
-        <div class="card-body">
-            <h6>{{ category[0] }}</h6>
-        </div>
-        <div class="post-date"><i class="icon-calendar"></i>{{ category.date | date: date_format }}</div>
-        <a href="{{ post.url | relative_url }}" class="stretched-link"></a>
+    <div class="card-body">
+        <h6>{{ category[0] }}</h6>
     </div>
-
-</body>
-
-</html>
+    <div class="post-date"><i class="icon-calendar"></i>{{ category.date | date: date_format }}</div>
+    <a href="{{ post.url | relative_url }}" class="stretched-link"></a>
+</div>
