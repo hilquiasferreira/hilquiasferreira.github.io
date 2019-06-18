@@ -8,6 +8,7 @@ layout: default
 	{% include cardcategory.html %}
 
 </div>
+{%- endfor -%}
 
 <div class="col-sm-4">
 	{% for type in site.types %}
@@ -15,5 +16,3 @@ layout: default
 		{{ type.name }}
 	{% endfor %}
 </div>
-
-{%- endfor -%}
