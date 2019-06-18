@@ -2,17 +2,18 @@
 layout: default
 ---
 
-{%- for category in site.categories -%}
+{% for category in site.categories %}
 <div class="col-sm-4">
 
-	{%- include cardcategory.html -%}
+	{% include cardcategory.html %}
 
 </div>
 
 <div class="col-sm-4">
-	{%- for type in site.types -%}
+	{% for type in site.types %}
 		{{ type.real_name }}
-	{%- endfor -%}
+		{{ type.name }}
+	{% endfor %}
 </div>
 
 {%- endfor -%}
