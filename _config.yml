@@ -18,7 +18,7 @@ plainwhite:
 
 #Collections
 collections:
-  - my-colletions
+  - types
 
   # generate social links in footer
   social_links:
