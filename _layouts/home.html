@@ -7,14 +7,13 @@ layout: default
 
 	{% include cardcategory.html %}
 
+	{% for post in site.posts %}
+
+		{% include card.html %}
+
+	{% endfor %}
 </div>
 {% endfor %}	
 
 
-{% for post in site.posts %}
-<!--	{% if post.category == "Dynamics 365 FO" %}-->
-	<div class="col-sm-4">
-		{% include card.html %}
-	</div>
-<!--	{% endif %}-->
-{% endfor %}
+
