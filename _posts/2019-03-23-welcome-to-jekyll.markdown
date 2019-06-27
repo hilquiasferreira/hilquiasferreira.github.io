@@ -1,12 +1,19 @@
 ---
 title: Testando title II
 layout: post
-summary: Learn git commands
 categories: 
     - Dynamics 365 FO
 thumbnail: ../assets/img/posts/automation-3154529-640.png
 author: Hilquias Ferreira
-imageauthor: 
+summary: Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
+        industry's standard dummy text
+        ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type
+        specimen book. It has survived not only
+        five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It
+        was popularised in the 1960s with the release
+        of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing
+        software like Aldus PageMaker including versions of
+        Lorem Ipsum.
 ---
 
 Image by <a href="https://pixabay.com/users/mohamed_hassan-5229782/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=3154529">mohamed Hassan</a> from <a href="https://pixabay.com/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=3154529">Pixabay</a>
