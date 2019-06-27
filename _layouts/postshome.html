@@ -6,11 +6,12 @@ layout: default
 		{% for post in site.posts %}
 		<div class="col-md-10 blogShort">
 			<h1>{{post.title | escape}}</h1>
+			<!--
 			<img src="{{ post.thumbnail }}" alt="post img"
 				class="pull-left img-responsive thumb margin10 img-thumbnail">
-
-			<em>This snippet use <a href="http://bootsnipp.com/snippets/featured/sexy-sidebar-navigation"
-					target="_blank">Sidebar Navigation</a></em>
+			-->
+			<em>Category:<a href="#"
+					target="_blank"> {{ post.category }} </a></em>
 			<article>
 				<p>
 					{{ post.summary }}
