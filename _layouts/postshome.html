@@ -10,8 +10,10 @@ layout: default
 			<img src="{{ post.thumbnail }}" alt="post img"
 				class="pull-left img-responsive thumb margin10 img-thumbnail">
 			-->
-			<em>Category:<a href="#"
-					target="_blank"> {{ post.category }} </a></em>
+			{%- for tag in post.categories -%}
+			<a href="#" class="badge badge-primary"> {{ tag }} </a>
+			{%- endfor -%}
+
 			<article>
 				<p>
 					{{ post.summary }}
