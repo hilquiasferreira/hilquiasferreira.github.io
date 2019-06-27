@@ -1,12 +1,11 @@
 ---
 layout: default
 ---
-{%- if site.posts.size > 0 -%}
-	{%- for post in site.posts -%}
-		{%- if post.category == "Dynamics 365 FO" -%}
-		<div class="col-sm-4">
-			{%- include card.html -%}
-		</div>
-		{%- endif -%}
-	{%- endfor -%}
-{%- endif -%}
+
+{%- for post in site.posts -%}
+	{%- if post.categories == "Dynamics 365 FO" -%}
+	<div class="col-sm-4">
+		{%- include card.html -%}
+	</div>
+	{%- endif -%}
+{%- endfor -%}
