@@ -20,6 +20,8 @@ plainwhite:
 collections:
   postcategories:
     output: true
+  posts:
+    output: true
 
   # generate social links in footer
   social_links:
