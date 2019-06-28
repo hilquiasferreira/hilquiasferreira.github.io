@@ -19,4 +19,3 @@ name: Dynamics 365 FO
     <a class="btn btn-outline-primary" href="{{ post.url }}">READ MORE</a>        
 </div>
 {% endfor %}
-<br>
