@@ -2,18 +2,40 @@
 layout: default
 ---
 <div class="row">
-	{% for tag in site.categories %} {% capture tag_name %}{{ tag | first }}{% endcapture %}
 	<div class="col-sm-4">
-			<!--
-			<div id="#{{ tag_name | slugize }}"></div>
-			<li class="tag-head">
-				<a href="{{ site.baseurl }}/categories/{{ tag_name }}">{{ tag_name }}</a>
-			</li>
-			<a name="{{ tag_name | slugize }}"></a>
-			-->
-		{% include cardcategory.html %}
-			
-	</div>
-	{% endfor %}
-</div>
+		<center>
+			<img src="{{ "/assets/portfolio.png" | relative_url }}" alt="{{ site.plainwhite.name }}"
+				height="250px"></img>
+			<h4>Hilquias Ferreira</h4>
+			<p>Senior Analyst Programmer</p>
+			<br>
 
+			<div>
+				<!--Linkedin-->
+				<a class="fa fa-linkedin" href="https://linkedin.com/{{ site.plainwhite.social_links.linkedIn }}"></a>
+				<!--Twitter-->
+				<a class="fa fa-twitter" href="https://twitter.com/{{ site.plainwhite.social_links.twitter }}"></a>
+				<!--Github-->
+				<a class="fa fa-github" href="https://github.com/{{ site.plainwhite.social_links.github }}"></a>
+			</div>
+
+			<br>
+			<p>&copy; 2019</p>
+
+			<hr class="d-sm-none">
+		</center>
+	</div>
+	<div class="col-sm-8">
+
+		<div class="row">
+			{% for tag in site.categories %} {% capture tag_name %}{{ tag | first }}{% endcapture %}
+			<div class="col-sm-4">
+
+				{% include cardcategory.html %}
+
+			</div>
+			{% endfor %}
+		</div>
+
+	</div>
+</div>
