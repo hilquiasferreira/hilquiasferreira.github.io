@@ -1,8 +1,24 @@
 <div class="card">
-    <img class="card-img-top" src="/{{ category.image }}" alt="Card image" style="width:100%">
+    {{ if tag_name == "dynamics365" }}
+    <img class="card-img-top" src="/assets/img/categ/dynamics365.png" alt="Card image" style="width:100%">
     <div class="card-body">
-        <h6>#{{ tag_name | slugize }}</h6>        
+        <h6>Dynamics 365 F&O</h6>
     </div>
-    
+    {{ endif }}
+
+    {{ if tag_name == "francophonie" }}
+    <img class="card-img-top" src="/assets/img/categ/french-language.png" alt="Card image" style="width:100%">
+    <div class="card-body">
+        <h6>Francophonie</h6>
+    </div>
+    {{ endif }}
+
+    {{ if tag_name == "web-development" }}
+    <img class="card-img-top" src="/assets/img/categ/web-development.png" alt="Card image" style="width:100%">
+    <div class="card-body">
+        <h6>Web development</h6>
+    </div>
+    {{ endif }}
+
     <a href="{{ site.baseurl }}/categories/{{ tag_name }}" class="stretched-link"></a>
 </div>
