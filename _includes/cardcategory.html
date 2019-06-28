@@ -4,5 +4,5 @@
         <h6>#{{ tag_name | slugize }}</h6>        
     </div>
     
-    <a href="{{ category.url | relative_url }}" class="stretched-link"></a>
+    <a href="{{ site.baseurl }}/categories/{{ tag_name }}" class="stretched-link"></a>
 </div>
