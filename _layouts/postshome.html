@@ -3,28 +3,6 @@ layout: default
 ---
 <div class="container">
 	<div id="blog" class="row">
-		{% for post in site.posts %}
-
-		{% if post.tags contains "Dynamics 365 FO" %}
-		<div class="col-md-10 blogShort">
-			<h1>{{post.title | escape}}</h1>
-			<!--
-    <img src="{{ post.thumbnail }}" alt="post img"
-        class="pull-left img-responsive thumb margin10 img-thumbnail">
-    -->
-			{%- for tag in post.categories -%}
-			<a href="#" class="badge badge-primary"> {{ tag }} </a>
-			{%- endfor -%}
-
-			<article>
-				<p>
-					{{ post.summary }}
-				</p>
-			</article>
-			<a class="btn btn-blog pull-right marginBottom10" href="http://bootsnipp.com/user/snippets/2RoQ">READ MORE</a>
-		</div>
-		{% endif %}
-
-		{% endfor %}
+		{{ content }}
 	</div>
 </div>
