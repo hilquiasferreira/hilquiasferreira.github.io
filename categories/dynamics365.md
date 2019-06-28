@@ -23,6 +23,7 @@ image: ../assets/img/categ/dynamics365.png
             {{ post.summary }}
         </p>
     </article>
-    <a class="btn btn-blog pull-right marginBottom10" href="http://bootsnipp.com/user/snippets/2RoQ">READ MORE</a>
+    <button type="button" class="btn btn-primary" href="#">READ MORE</button>
+    
 </div>
 {% endfor %}
