@@ -23,7 +23,6 @@ image: ../assets/img/categ/dynamics365.png
             {{ post.summary }}
         </p>
     </article>
-    <button type="button" class="btn btn-primary" href="#">READ MORE</button>
-    
+    <button type="button" class="btn btn-outline-primary" href="{{ post.url }}">READ MORE</button>    
 </div>
 {% endfor %}
