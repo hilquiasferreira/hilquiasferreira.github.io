@@ -3,48 +3,22 @@ layout: default
 ---
 {%- assign date_format = site.minima.date_format | default: "%b %-d, %Y" -%}
 <div class="container" style="margin-top:30px">
-  <div class="row">
-      
-    <div class="col-sm-8">
-      <div class="container">
-        <div class="card" style="width:100%">
-          <img class="card-img-top" src="/{{ page.thumbnail }}" alt="Card image" style="width:100%">
-          
-          <div class="card-body">
-            <h4 class="card-title">{{ page.title | escape }}</h4>
-            <p class="card-text">
-              {{ page.summary | escape }}
-            </p>
-            <p>
-              {{content}}
-            </p>
-          </div>
-          <div class="post-date"><i class="icon-calendar"></i>{{ page.date | date: date_format }}</div>          
-        </div>
+  <div class="container">
+    <div class="card" style="width:100%">
+      <img class="card-img-top" src="/{{ page.thumbnail }}" alt="Card image" style="width:100%">
+
+      <div class="card-body">
+        <h4 class="card-title">{{ page.title | escape }}</h4>
+        <p class="card-text">
+          {{ page.summary | escape }}
+        </p>
+        <p>
+          {{content}}
+        </p>
       </div>
-      <br>
-    </div> 
-    <div class="col-sm-4">
-      <center>
-        {%- for tag in page.categories -%}
-        <span class="badge badge-pill badge-secondary">{{ tag }}</span>
-        {%- endfor -%}
-        <br>
-        <p>Posted by:</p>
-        {{ page.author }}
-
-        <br>
-        <br>
-        <ul class="nav flex-column">
-          {%- for post in site.posts -%}
-          <li class="nav-item">
-            <a class="nav-item" href="{{ post.url | relative_url }}">{{ post.title }}</a>
-          </li>                        
-          {%- endfor -%}
-        </ul>  
-
-      </center>
-    </div>   
+      <div class="post-date"><i class="icon-calendar"></i>{{ page.date | date: date_format }}</div>
+    </div>
   </div>
+  <br>
 </div>
 </div>
