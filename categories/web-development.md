@@ -1,11 +1,7 @@
 ---
-name: Web development
-summary: Posts related to web development
-author: Hilquias Ferreira
-image: ../assets/img/categ/web-development.png
+layout: categories
+name: Dynamics 365 FO
 ---
-
-<h3>Posts by category</h3>
 
 {% for post in site.categories.web-development %}
 <div class="col-md-10 blogShort">
