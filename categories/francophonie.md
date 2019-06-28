@@ -23,6 +23,6 @@ image: ../assets/img/categ/french-language.png
             {{ post.summary }}
         </p>
     </article>
-    <a class="btn btn-blog pull-right marginBottom10" href="http://bootsnipp.com/user/snippets/2RoQ">READ MORE</a>
+    <a class="btn btn-outline-primary" href="{{ post.url }}">READ MORE</a>
 </div>
 {% endfor %}
