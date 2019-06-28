@@ -4,6 +4,7 @@ layout: default
 <div class="container">
 	<div id="blog" class="row">
 		{% for post in site.posts %}
+		{% if post.categories contains "Dynamics 365 FO" %}
 		<div class="col-md-10 blogShort">
 			<h1>{{post.title | escape}}</h1>
 			<!--
@@ -22,6 +23,7 @@ layout: default
 			<a class="btn btn-blog pull-right marginBottom10" href="http://bootsnipp.com/user/snippets/2RoQ">READ
 				MORE</a>
 		</div>
+		{% endif %}
 		{% endfor %}
 	</div>
 </div>
