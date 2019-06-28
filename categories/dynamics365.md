@@ -24,5 +24,6 @@ image: ../assets/img/categ/dynamics365.png
         </p>
     </article>
     <a class="btn btn-outline-primary" href="{{ post.url }}">READ MORE</a>    
+    <br>
 </div>
 {% endfor %}
