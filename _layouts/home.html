@@ -2,11 +2,17 @@
 layout: default
 ---
 <div class="row">
-	{% for category in site.categories %}
+	{% for tag in site.categories %} {% capture tag_name %}{{ tag | first }}{% endcapture %}
 	<div class="col-sm-4">
 
+			<div id="#{{ tag_name | slugize }}"></div>
+			<li class="tag-head">
+				<a href="{{ site.baseurl }}/blog/categories/{{ tag_name }}">{{ tag_name }}</a>
+			</li>
+			<a name="{{ tag_name | slugize }}"></a>
+			<!--
 		{% include cardcategory.html %}
-
+			-->
 	</div>
 	{% endfor %}
 </div>

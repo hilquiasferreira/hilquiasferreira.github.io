@@ -1,7 +1,7 @@
 <div class="card">
     <img class="card-img-top" src="/{{ category.image }}" alt="Card image" style="width:100%">
     <div class="card-body">
-        <h6>{{ category.name }}</h6>        
+        <h6>#{{ tag_name | slugize }}</h6>        
     </div>
     
     <a href="{{ category.url | relative_url }}" class="stretched-link"></a>
