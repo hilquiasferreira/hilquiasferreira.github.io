@@ -2,7 +2,7 @@
 title: Testando title II
 layout: post
 categories: 
-    - dynamcis365
+    - dynamics365
 thumbnail: ../assets/img/posts/automation-3154529-640.png
 author: Hilquias Ferreira
 summary: Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
