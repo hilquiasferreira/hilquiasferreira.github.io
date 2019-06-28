@@ -2,7 +2,7 @@
 title: Using Git Like Pro
 layout: post
 categories: 
-    - Francophonie
+    - francophonie
 thumbnail: ../assets/img/posts/monitor-329512-640.jpg
 author: Hilquias Ferreira
 summary: Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the

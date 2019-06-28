@@ -2,7 +2,7 @@
 title: Using Git pra valer
 layout: post
 categories: 
-    - Web development
+    - web-development
 thumbnail: ../assets/img/posts/online-3539409_640.png
 author: Hilquias Ferreira
 summary: Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
